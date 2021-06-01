@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a066ed437f568140896d6a2066b8129, type: 3}
+  m_Name: StaffBasic
+  m_EditorClassIdentifier: 
+  coolDown: 0.5
+  gameObject: {fileID: 218978338920450952, guid: c1e35ca5eb26e45489603b631f3d1994,
+    type: 3}
+  magicBall: {fileID: 1615376158724062973, guid: 6b6aac9835fcebb479365d31f08edc40,
+    type: 3}
