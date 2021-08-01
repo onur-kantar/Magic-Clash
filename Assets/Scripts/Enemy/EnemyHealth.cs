@@ -17,7 +17,7 @@ public class EnemyHealth : MonoBehaviour
     {
         if (deathStyle == "Death") //TODO: --kötü bir yöntem
         {
-            GetComponent<CapsuleCollider>().enabled = false;
+            GetComponent<BoxCollider>().enabled = false;
             GetComponent<EnemyAttack>().enabled = false;
             GetComponent<EnemyMovement>().enabled = false;
             GetComponent<EnemyHealth>().enabled = false;

@@ -4,26 +4,28 @@ using UnityEngine;
 
 public class EnemyCreator : MonoBehaviour
 {
+
     [SerializeField] Transform creationPoint;
     [SerializeField] GameObject enemy;
-    [SerializeField] float coolDown, count;
+    [SerializeField] float cooldown, randomCooldownRange, count, randomDistance;
     [HideInInspector] public EnemyController ownerEnemyController;
-    public int totalCount;
-    float timeStamp, currentCount;
+    public int totalEnemyCount;
+    float timeStamp, currentEnemyCount;
+
     private void Update()
     {
-        if (currentCount < totalCount)
+        if (currentEnemyCount < totalEnemyCount)
         {
             if (timeStamp <= Time.time)
             {
-                timeStamp = Time.time + coolDown + Random.Range(-0.1f, 0.1f);
+                timeStamp = Time.time + cooldown + Random.Range(-randomCooldownRange, randomCooldownRange);
                 for (int i = 0; i < count; i++)
                 {
-                    Vector3 vector3 = new Vector3(Random.Range(-3f, 3f), 0, Random.Range(-3f, 3f));
-                    GameObject go = Instantiate(enemy, creationPoint.position + vector3, creationPoint.rotation);
+                    Vector3 distance = new Vector3(Random.Range(-randomDistance, randomDistance), 0, Random.Range(-randomDistance, randomDistance));
+                    GameObject go = Instantiate(enemy, creationPoint.position + distance, creationPoint.rotation);
                     go.GetComponent<EnemyHealth>().ownerEnemyCreator = this;
                     go.transform.parent = gameObject.transform;
-                    currentCount++;
+                    currentEnemyCount++;
                 }
             }
         }

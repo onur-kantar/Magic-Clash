@@ -780,7 +780,7 @@ GameObject:
   - component: {fileID: 1225850655219030846}
   - component: {fileID: 1225850655219030847}
   - component: {fileID: 1225850655219030840}
-  - component: {fileID: 7179202252120807799}
+  - component: {fileID: 6253805965828740517}
   m_Layer: 0
   m_Name: Arch
   m_TagString: Untagged
@@ -1547,7 +1547,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1225850655219030842}
   m_Mesh: {fileID: 0}
---- !u!64 &7179202252120807799
+--- !u!64 &6253805965828740517
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1570,9 +1570,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1225850655938439433}
-  - component: {fileID: 1225850655938439432}
+  - component: {fileID: 969387041485391610}
   m_Layer: 0
-  m_Name: EnemyCreator
+  m_Name: BossCreator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1587,7 +1587,7 @@ Transform:
   m_GameObject: {fileID: 1225850655938439434}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_Children:
   - {fileID: 1225850655219030845}
   - {fileID: 1225850655178702997}
@@ -1596,7 +1596,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1225850655938439432
+--- !u!114 &969387041485391610
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1615,7 +1615,7 @@ MonoBehaviour:
   count: 2
   randomDistance: 3
   ownerEnemyController: {fileID: 0}
-  totalEnemyCount: 10
+  totalEnemyCount: 0
 --- !u!1 &1225850656996803653
 GameObject:
   m_ObjectHideFlags: 0
@@ -1663,7 +1663,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &7923250432378917596
 Transform:

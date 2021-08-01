@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - MagicBall
   - Boss
+  - EnemyController
   layers:
   - Default
   - TransparentFX

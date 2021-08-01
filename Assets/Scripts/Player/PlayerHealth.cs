@@ -20,7 +20,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (deathStyle == "Death") //TODO: --kötü bir yöntem
         {
-            GetComponent<CapsuleCollider>().enabled = false;
+            GetComponent<BoxCollider>().enabled = false;
             mainPlayer.GetComponent<CreateTeamPoints>().teammatePoints[playerJoinTeam.teamId].isFill = false;
             GetComponent<PlayerHealth>().enabled = false;
             GetComponent<PlayerMovement>().enabled = false;

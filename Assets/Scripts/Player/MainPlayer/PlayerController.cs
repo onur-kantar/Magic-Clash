@@ -6,12 +6,10 @@ using UnityEngine.AI;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] InGameManager gameManager;
-    List<GameObject> players;
 
     int totalPlayer;
     private void Start()
     {
-        players = new List<GameObject>();
     }
     public void IncreasePlayer()
     {
@@ -25,10 +23,12 @@ public class PlayerController : MonoBehaviour
             gameManager.GameOver(InGameManager.GameOverType.Lose);
         }
     }
-    public List<GameObject> GetPlayers()
+    public GameObject [] GetPlayers()
     {
-        foreach (Transform child in transform)
-            players.Add(child.gameObject);
+        GameObject [] players = GameObject.FindGameObjectsWithTag("Player");
+
+        //foreach (Transform child in transform)
+        //    players.Add(child.gameObject);
         return players;
     }
 }

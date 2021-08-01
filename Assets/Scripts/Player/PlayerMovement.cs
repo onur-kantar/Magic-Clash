@@ -96,6 +96,4 @@ public class PlayerMovement : MonoBehaviour
         }
         return v[v.Length - 1];
     }
-
-
 }

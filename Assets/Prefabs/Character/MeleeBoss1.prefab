@@ -414,7 +414,7 @@ GameObject:
   - component: {fileID: 2025128899}
   m_Layer: 7
   m_Name: MeleeBoss1
-  m_TagString: Enemy
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -466,9 +466,9 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 126
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!65 &6566609309072898104
 BoxCollider:
@@ -532,6 +532,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d796b9b358471047881f9843fe58987, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 1
+  DeathPS: {fileID: 542680101547137281, guid: d425b8741ffbed54fb35cea2736a1f92, type: 3}
 --- !u!1 &2381296196530465716
 GameObject:
   m_ObjectHideFlags: 0

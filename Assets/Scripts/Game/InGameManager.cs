@@ -23,13 +23,13 @@ public class InGameManager : MonoBehaviour
         Debug.Log("Oyun Baþladý");
         UIManager.ActiveJoystick();
         UIManager.ScrollDown();
-        enemyController.StartCreation();
+        //enemyController.StartEnemyCreation();
         mainCamera.ZoomOut();
         isGameOver = false;
     }
     public void GameOver(GameOverType gameOverType)
     {
-        List<GameObject> gameObjects;
+        GameObject[] gameObjects;
         if (!isGameOver)
         {
             isGameOver = true;
@@ -41,7 +41,6 @@ public class InGameManager : MonoBehaviour
                 {
                     gameObject.GetComponent<PlayerMovement>().StopMovement();
                     gameObject.transform.LookAt(Vector3.back);
-                    mainCamera.ZoomIn();
                     gameObject.GetComponent<Animator>().SetTrigger("Dance");
                 }
             }
@@ -53,8 +52,9 @@ public class InGameManager : MonoBehaviour
                     gameObject.GetComponent<Animator>().SetTrigger("Dance");
                 }
             }
+            mainCamera.ZoomIn();
             UIManager.DisableJoystick();
-            enemyController.StopCreation();
+            enemyController.StopEnemyCreation();
             // TODO: - Oyun sonu sahnesi (kazandýðý para falan)
         }
     }
