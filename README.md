@@ -8,7 +8,7 @@ This is a hyper-casual genre game. Made with **[Unity](https://unity.com/)**.
 * Boss
 
 ## Gameplay
-Gather your teammates in the arena and attack the enemies. Strengthen your team with the in-game coins you earn at the end of the game.
+Gather your teammates in the arena and attack the enemies. Strengthen your team with the in-game coins you earn at the end of the level.
 
 ![](/VideosAndPhotos/Gameplay-Resized.gif)
 
