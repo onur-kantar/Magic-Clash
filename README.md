@@ -1,2 +1,3 @@
 # Magic-Clash
-![](/VideosAndPhotos/Under-Construction.png)
+![](/VideosAndPhotos/Under-Construction-Resized.png)
+
