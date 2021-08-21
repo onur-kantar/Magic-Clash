@@ -4,7 +4,7 @@
 This is a hyper-casual genre game. Made with **[Unity](https://unity.com/)**.
 
 ## Enemey Types
-* Zombile
+* Zombie
 * Boss
 
 ## Gameplay
